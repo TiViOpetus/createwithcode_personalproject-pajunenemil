@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Camcontroller : MonoBehaviour
 {
-    public GameObject cam1;
+    public GameObject firstpersoncamera;
     public GameObject cam2;
     public GameObject cam3;
     // Start is called before the first frame update
@@ -18,19 +18,19 @@ public class Camcontroller : MonoBehaviour
     {
         if (Input.GetButtonDown("Switch1"))
         {
-            cam1.SetActive(true);
+            firstpersoncamera.SetActive(true);
             cam2.SetActive(false);
             cam3.SetActive(false);
         }
         if (Input.GetButtonDown("Switch2"))
         {
-            cam1.SetActive(false);
+            firstpersoncamera.SetActive(false);
             cam2.SetActive(true);
             cam3.SetActive(false);
         }
         if (Input.GetButtonDown("Switch3"))
         {
-            cam1.SetActive(false);
+            firstpersoncamera.SetActive(false);
             cam2.SetActive(false);
             cam3.SetActive(true);
         }
