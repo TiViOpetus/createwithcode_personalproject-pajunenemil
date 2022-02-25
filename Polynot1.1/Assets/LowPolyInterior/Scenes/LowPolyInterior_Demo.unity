@@ -19695,7 +19695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acbfd86c1caeaf14eb108b190cb2bd64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 100
+  mouseSensitivity: 300
   playerBody: {fileID: 1034177434}
 --- !u!1001 &1138612170
 PrefabInstance:
@@ -26970,6 +26970,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8446088109260137507, guid: cd2732c0a3f49584db67f1ca8f164102, type: 3}
   m_PrefabInstance: {fileID: 1563754270}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1564506418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1357445559844659729, guid: e5f53f3e0e1518c4c9ec3be6d16f67b5, type: 3}
+  m_PrefabInstance: {fileID: 602080601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1564506419
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564506418}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf90a4cdee1832944b44592c3574a1bf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1570192169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36173,7 +36197,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 65d83a9bc427c0a4995df79defd3ba58, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: aa9fcb8764ab3324aa575a948d139c3a, type: 2}
+      objectReference: {fileID: 2100000, guid: 429dd90a38598a6439cac85af03f10df, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65d83a9bc427c0a4995df79defd3ba58, type: 3}
 --- !u!1001 &2072705656
