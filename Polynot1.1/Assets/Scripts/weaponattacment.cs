@@ -60,14 +60,14 @@ public class weaponattacment : MonoBehaviour
 			WeaponSlot1.transform.localEulerAngles = new Vector3(6.97f, 4f, 211f);
 		}
 		//Execute the following code if shooting trigger is on
-		if (anim.GetBool("Is_Shooting"))
+		if(anim.GetBool("Is_Shooting"))
 		{
 			//Update Weapon parent and position
-			WeaponSlot1.transform.parent = GameObject.Find("Base HumanLPalmGizmo").transform;
+			WeaponSlot1.transform.parent = GameObject.Find ("Base HumanLPalmGizmo").transform;
 			//Set the desired idle position for the weapon
-			WeaponSlot1.transform.localPosition = new Vector3(-0.03f, -0.07f, -0.13f);
+			WeaponSlot1.transform.localPosition = new Vector3(-0.03f,-0.07f,-0.13f);
 			//set the desired idle rotation for the weapon
-			WeaponSlot1.transform.localEulerAngles = new Vector3(6.97f, 4f, 211f);
+			WeaponSlot1.transform.localEulerAngles  = new Vector3(6.97f,4f,211f); 
 		}
 	}
 }
