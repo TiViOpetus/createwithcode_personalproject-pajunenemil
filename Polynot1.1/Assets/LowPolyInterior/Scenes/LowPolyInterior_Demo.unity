@@ -19768,7 +19768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   range: 100
-  fpsCam: {fileID: 0}
+  fpsCam: {fileID: 1136385242}
 --- !u!4 &1133634727 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5686745916957266324, guid: cc4156adf6614cb4693b57fd602cf0b9, type: 3}
@@ -27264,7 +27264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c8ba1029a35a11408c204257b982737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
 --- !u!1001 &1570192169
 PrefabInstance:
   m_ObjectHideFlags: 0
