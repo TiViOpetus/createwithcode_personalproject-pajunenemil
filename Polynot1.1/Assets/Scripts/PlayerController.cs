@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private Animator anim;
+    
     public CharacterController controller;
 
     public float speed = 12f;
+
 
     
     // Start is called before the first frame update
@@ -25,6 +28,7 @@ public class PlayerController : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
+        anim.SetBool("Walking With Rifle", true);
     }
 
 }

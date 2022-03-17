@@ -19,6 +19,8 @@ public class gun : MonoBehaviour
 
     public Camera fpsCam;
 
+    //public Rigidbody projectile; //ammus  
+    //public float speed = 20;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -32,10 +34,21 @@ public class gun : MonoBehaviour
         {
            Fire();//aloittaa ampumaa kun hiiren vasenta painiketta painetaan
         }
-
+       
+        
+       
         if (fireTimer < fireRate)
             fireTimer += Time.deltaTime;  //ajastin
     }
+
+    void FixedUpdate()
+    {
+        AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo(0);
+
+        if (info.IsName("Firing With Rifle")) anim.SetBool("Firing With Rifle", false);
+    }
+
+
 
 
     private void Fire()
