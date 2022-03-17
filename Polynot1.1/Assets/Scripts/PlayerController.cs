@@ -7,15 +7,18 @@ public class PlayerController : MonoBehaviour
     public CharacterController controller;
 
     public float speed = 12f;
+
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -23,4 +26,7 @@ public class PlayerController : MonoBehaviour
 
         controller.Move(move * speed * Time.deltaTime);
     }
+
 }
+
+
