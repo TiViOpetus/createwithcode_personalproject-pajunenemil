@@ -20,7 +20,7 @@ public class weaponattacment : MonoBehaviour
 			//Create an instance of the weapon and set the state to idle
 			WeaponSlot1 = Instantiate(MainWeaponAttachment, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
 			//Attach the weapon to the desired bone or submesh make sure its a child to the player object
-			WeaponSlot1.transform.parent = GameObject.Find("bodyrahall").transform;
+			WeaponSlot1.transform.parent = GameObject.Find("Rifle_00").transform;
 			//Set the desired idle position for the weapon
 			WeaponSlot1.transform.localPosition = new Vector3(-0.0005f, 0.0011f, 0);
 			//set the desired idle rotation for the weapon
@@ -60,7 +60,7 @@ public class weaponattacment : MonoBehaviour
 			WeaponSlot1.transform.localEulerAngles = new Vector3(6.97f, 4f, 211f);
 		}
 		//Execute the following code if shooting trigger is on
-		if(anim.GetBool("Is_Shooting"))
+		if(anim.GetBool("Firing Rifle"))
 		{
 			//Update Weapon parent and position
 			WeaponSlot1.transform.parent = GameObject.Find ("Base HumanLPalmGizmo").transform;

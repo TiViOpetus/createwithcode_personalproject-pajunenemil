@@ -17,8 +17,5 @@ public class Gunshoot : MonoBehaviour
     }
 
 
-    void OnBecameInvisible()
-    {
-        Destroy(gameObject);
-    }
+
 }
