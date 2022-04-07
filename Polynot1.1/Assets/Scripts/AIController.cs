@@ -148,10 +148,6 @@ public class AIController : MonoBehaviour
         m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
         navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
      }
-    void CaughtPlayer()
-    {
-        m_CaughtPlayer = true;
-    }
 
     void LookingPlayer(Vector3 player)
     {

@@ -37,38 +37,39 @@ public class weaponattacment : MonoBehaviour
 
 	//This function updates the weapon state and updates its position and rotation
 	void UpdateWeaponState()
-	{
-		//Execute the following code if the current state is idle
-		if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
-		{
-			//Update weapon parent and position
-			WeaponSlot1.transform.parent = GameObject.Find("body rahall").transform;
-			//Set the desired idle position for the weapon
-			WeaponSlot1.transform.localPosition = new Vector3(-0.0005f, 0.0011f, 0);
-			//set the desired idle rotation for the weapon
-			WeaponSlot1.transform.localEulerAngles = new Vector3(6.97f, 42.36f, 90f);
-		}
+    {
+        //Execute the following code if the current state is idle
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+        {
+            //Update weapon parent and position
+            WeaponSlot1.transform.parent = GameObject.Find("body rahall").transform;
+            //Set the desired idle position for the weapon
+            WeaponSlot1.transform.localPosition = new Vector3(-0.0005f, 0.0011f, 0);
+            //set the desired idle rotation for the weapon
+            WeaponSlot1.transform.localEulerAngles = new Vector3(6.97f, 42.36f, 90f);
+        }
 
-		//Execute the following code if the current state is Running
-		if (anim.GetCurrentAnimatorStateInfo(0).IsName("Running"))
-		{
-			//Update Weapon parent and position
-			WeaponSlot1.transform.parent = GameObject.Find("Base HumanLPalmGizmo").transform;
-			//Set the desired idle position for the weapon
-			WeaponSlot1.transform.localPosition = new Vector3(-0.03f, -0.07f, -0.13f);
-			//set the desired idle rotation for the weapon
-			WeaponSlot1.transform.localEulerAngles = new Vector3(6.97f, 4f, 211f);
-		}
-		//Execute the following code if shooting trigger is on
-		if(anim.GetBool("Firing Rifle"))
-		{
-			//Update Weapon parent and position
-			WeaponSlot1.transform.parent = GameObject.Find ("Base HumanLPalmGizmo").transform;
-			//Set the desired idle position for the weapon
-			WeaponSlot1.transform.localPosition = new Vector3(-0.03f,-0.07f,-0.13f);
-			//set the desired idle rotation for the weapon
-			WeaponSlot1.transform.localEulerAngles  = new Vector3(6.97f,4f,211f); 
-		}
-	}
+        //Execute the following code if the current state is Running
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Running"))
+        {
+            //Update Weapon parent and position
+            WeaponSlot1.transform.parent = GameObject.Find("Base HumanLPalmGizmo").transform;
+            //Set the desired idle position for the weapon
+            WeaponSlot1.transform.localPosition = new Vector3(-0.03f, -0.07f, -0.13f);
+            //set the desired idle rotation for the weapon
+            WeaponSlot1.transform.localEulerAngles = new Vector3(6.97f, 4f, 211f);
+        }
+        //Execute the following code if shooting trigger is on
+        if (!anim.GetBool("Firing Rifle"))
+        {
+            return;
+        }
+        //Update Weapon parent and position
+        WeaponSlot1.transform.parent = GameObject.Find("Base HumanLPalmGizmo").transform;
+        //Set the desired idle position for the weapon
+        WeaponSlot1.transform.localPosition = new Vector3(-0.03f, -0.07f, -0.13f);
+        //set the desired idle rotation for the weapon
+        WeaponSlot1.transform.localEulerAngles = new Vector3(6.97f, 4f, 211f);
+    }
 }
 

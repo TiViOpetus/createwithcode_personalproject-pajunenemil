@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     
     public CharacterController controller;
 
-    public float speed = 12f;
+    public float speed = 10f;
 
 
     
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
-        anim.SetBool("Walking With Rifle", true);
+        //anim.SetBool("Walking With Rifle", true);
     }
 
 }

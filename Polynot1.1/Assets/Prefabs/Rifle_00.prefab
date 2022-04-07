@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 2275053443649889449}
   - component: {fileID: 5871000965939296905}
   - component: {fileID: 5871000965939296903}
+  - component: {fileID: 7098741700423924663}
   m_Layer: 0
   m_Name: Rifle_00
   m_TagString: Untagged
@@ -257,6 +258,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 5154813281723188012, guid: 68dcffac27c29b844a7832c9b273fe77, type: 3}
   speed: 100
+--- !u!95 &7098741700423924663
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502317305587547667}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e9f1a466f6e55864eb04243706acbe3e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1699842439097754001
 GameObject:
   m_ObjectHideFlags: 0
