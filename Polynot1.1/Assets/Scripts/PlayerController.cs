@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Animator anim;
+    //private Animator anim;
     
     public CharacterController controller;
 
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
-        anim.SetBool("Walking With Rifle", true);
+        //anim.SetBool("Walking With Rifle", true);
     }
 
 }
