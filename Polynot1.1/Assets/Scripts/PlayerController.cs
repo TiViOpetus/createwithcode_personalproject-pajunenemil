@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Animator anim;
+    //private Animator anim;
     
     public CharacterController controller;
 

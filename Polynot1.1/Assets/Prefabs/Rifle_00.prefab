@@ -193,7 +193,11 @@ GameObject:
   - component: {fileID: 2275053443649889449}
   - component: {fileID: 5871000965939296905}
   - component: {fileID: 5871000965939296903}
+<<<<<<< HEAD
   - component: {fileID: 7098741700423924663}
+=======
+  - component: {fileID: -5121184314051467111}
+>>>>>>> 294ca97fb7cba5084f0072557618b1cd03921dd9
   m_Layer: 0
   m_Name: Rifle_00
   m_TagString: Untagged
@@ -258,7 +262,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 5154813281723188012, guid: 68dcffac27c29b844a7832c9b273fe77, type: 3}
   speed: 100
+<<<<<<< HEAD
 --- !u!95 &7098741700423924663
+=======
+--- !u!95 &-5121184314051467111
+>>>>>>> 294ca97fb7cba5084f0072557618b1cd03921dd9
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
