@@ -3,25 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TimerCounter : MonoBehaviour
+public class Timercountdown : MonoBehaviour
 {
     public GameObject textDisplay;
-    public int secondsLeft = 45;
+    public int secondsLeft = 30;
     public bool takingAway = false;
-
     void Start()
     {
+        //ajastin aloittaa kun peli käynnistyy
         textDisplay.GetComponent<Text>().text = "00:" + secondsLeft;
     }
 
+    
     void Update()
     {
         if (takingAway == false && secondsLeft > 0)
         {
-            StartCoroutine(Timertake());
+            StartCoroutine(TimerTake());
         }
     }
-    IEnumerator Timertake()
+
+    IEnumerator TimerTake()
     {
         takingAway = true;
         yield return new WaitForSeconds(1);
@@ -35,7 +37,5 @@ public class TimerCounter : MonoBehaviour
             textDisplay.GetComponent<Text>().text = "00:" + secondsLeft;
         }
         takingAway = false;
-
     }
-
 }
