@@ -4,31 +4,31 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Animator anim;
     
     public CharacterController controller;
-
-    public float speed = 10f;
-
-
     
-    // Start is called before the first frame update
-    void Start()
-    {
+    public float speed = 5f;
 
+    Rigidbody rb;
+
+
+    private void Start()
+    {
+        
     }
 
-    // Update is called once per frame
+
     void Update()
     {
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        //Vector3 move = transform.right * x + transform.forward * z;
+        //controller.Move(move * speed * Time.deltaTime);
 
-        controller.Move(move * speed * Time.deltaTime);
-        //anim.SetBool("Walking With Rifle", true);
+        rb.velocity = new Vector3(x, rb.velocity.y, z) * speed;
+
     }
 
 }
