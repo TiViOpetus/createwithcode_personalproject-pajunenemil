@@ -2180,6 +2180,7 @@ GameObject:
   - component: {fileID: 8078837345681517376}
   - component: {fileID: -818257752413217011}
   - component: {fileID: 8543814244418263430}
+  - component: {fileID: 4181320755986351423}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -2256,6 +2257,19 @@ MonoBehaviour:
   edgeIterations: 4
   edgeDistance: 0.5
   waypoints: []
+--- !u!65 &4181320755986351423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887321081190412794}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.0694818, z: 1}
+  m_Center: {x: 0, y: 0.8951254, z: 0}
 --- !u!1 &9003844729976548808
 GameObject:
   m_ObjectHideFlags: 0

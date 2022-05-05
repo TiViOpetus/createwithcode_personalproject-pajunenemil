@@ -14,7 +14,7 @@ public class Gunshoot : MonoBehaviour
         {
             GameObject BulletHolder;
             BulletHolder = Instantiate(Bullet, transform.position, transform.rotation) as GameObject;
-            BulletHolder.transform.Rotate(Vector3.left * 90);
+            //BulletHolder.transform.Rotate(Vector3.left * 90);
 
             Rigidbody Temporary_RigidBody;
             Temporary_RigidBody = BulletHolder.GetComponent<Rigidbody>();
